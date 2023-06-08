@@ -3,8 +3,8 @@ h2 {
     font-size: 50px; /*because why not*/
 }
 
-.articlesContainer{
-    border: solid 1px #ddd;
+#articlesContainer{
+    border: solid 1px #a83636;
 }
 
 .container{
