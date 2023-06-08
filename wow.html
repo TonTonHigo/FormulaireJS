@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" onsubmit="test();return false">
+        <label for="">nom</label>
+        <input type="text" name="" id="input1">
+        <label for="">prenom</label>
+        <input type="text" name="" id="input2">
+        <label for="">livre</label>
+        <input type="text" name="" id="input3">
+        <input type="submit">
+    </form>
+    
+    <div id="demo"></div>
+
+    <script>
+    // let tableauPrincipal = [
+    //     [1, 2, 3],
+    //     [4, 5, 6],
+    //     [7, 8, 9]
+    // ];
+
+    // console.log(tableauPrincipal[0]); // Affiche [1, 2, 3]
+    // console.log(tableauPrincipal[1][2]); // Affiche 6
+    // console.log(tableauPrincipal[2][1]); // Affiche 8
+
+    // for(let i = 0; i < tableauPrincipal.length; i++){
+
+    // console.log(tableauPrincipal[i]);
+
+    // for(let z = 0; z < tableauPrincipal[i].length; z++){
+
+    //     console.log("indice " + i + " on a la valeur " + tableauPrincipal[i][z] + " dans notre tableau");
+
+    // }
+    // }
+
+    function test(){
+
+        for(let i = 0; i <= 9; i++){
+
+            let nom = document.getElementById('input1').value;
+            let prenom = document.getElementById('input2').value;
+            let livre = document.getElementById('input3').value;
+            let div = document.createElement('div');
+            let div2 = document.createElement('div');
+            let div3 = document.createElement('div');
+    
+            let auteur = [
+                {
+                    nom:nom,
+                    prenom:prenom,
+                    livre:livre
+                }
+            ];
+        
+            div.innerHTML = "Nom de l'auteur:" + auteur[0].nom;
+            div2.innerHTML = "Prenom de l'auteur: " + auteur[0].prenom;
+            div3.innerHTML = "Livre: " + auteur[0].livre;
+    
+            document.getElementById('demo').appendChild(div);
+            document.getElementById('demo').appendChild(div2);
+            document.getElementById('demo').appendChild(div3);
+
+        }
+
+    }
+
+        // let tableau = ["mangue","coco","banane","poire","pomme"];
+
+        // console.log(tableau);
+        // console.log(tableau[2]);
+
+
+        // let tableau2 = [{mangue:"vergé",coco:"import",banane:"vergé",poire:"import",pomme:"vergé"}];
+
+        // console.log(tableau2);
+        // console.log(tableau2[0].mangue);
+        
+
+        // let tableau3 = [[{mangue:"vergé"}],["coco"],["banane"]];
+        // console.log(tableau3);
+        // console.log(tableau3[0][0].mangue);
+
+
+
+
+        // for(let i = 0; i<=10 ; i+=2){
+        //     console.log(i + " est un nombre pair");
+        // }
+
+        // let i = 0;
+        // let puissance = 1;
+        // let nombre = 2;
+        // while(i <= 5){
+        //     console.log(Math.pow(nombre, puissance));
+        //     i++;
+        //     puissance++;        
+        // }
+
+        // let mois = prompt('tape un mois');
+        // let long = 31;
+        // let cour = 30;
+        // let unique = 29;
+        // switch(mois){
+        //     case "janvier":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     case "fevrier":
+        //         alert(mois + " contient " + unique + " jours");
+        //         break;
+        //     case "mars":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     case "avril":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     case "mai":
+        //         alert(mois + " contient " + cour + " jours");
+        //         break;
+        //     case "juin":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     case "juillet":
+        //         alert(mois + " contient " + cour + " jours");
+        //         break;
+        //     case "aout":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     case "septembre":
+        //         alert(mois + " contient " + cour + " jours");
+        //         break;
+        //     case "octobre":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     case "novembre":
+        //         alert(mois + " contient " + cour + " jours");
+        //         break;
+        //     case "decembre":
+        //         alert(mois + " contient " + long + " jours");
+        //         break;
+        //     default:
+        //         alert("il faut écrire un mois!");
+        // }
+        
+        // let nombre = 0;
+        // for(let nombre = 1; nombre < 8; nombre++){
+        //     switch(nombre){
+        //         case 1:
+        //             console.log(nombre + " pour lundi");
+        //             break;
+        //         case 2:
+        //             console.log(nombre + " pour mardi");
+        //             break;
+        //         case 3:
+        //             console.log(nombre + " pour mercredi");
+        //             break;
+        //         case 4:
+        //             console.log(nombre + " pour jeudi");
+        //             break;
+        //         case 5:
+        //             console.log(nombre + " pour vendredi");
+        //             break;
+        //         case 6:
+        //             console.log(nombre + " pour samedi");
+        //             break;
+        //         case 7:
+        //             console.log(nombre + " pour dimanche");
+        //             break;
+        //         default:
+        //             console.log("il faut écrire un chiffre valide");
+        
+        //     }
+        // }
+
+    </script>
+
+
+</body>
+</html>
